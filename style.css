@@ -14,11 +14,30 @@ body {
 .cabecalhoPrincipal-nav {
     background-color: darkorange;
     margin-top: -18px;
-    
-    
+}
+
+.container {
+    display: inline;
+}
+
+.cabecalhoPrincipal-nav {
+    height: auto;
+}
+
+.cabecalhoPrincipal-nav ul li {
+    height: auto;
+	display: inline-block;
+}
+
+.cabecalhoPrincipal-nav ul li a {
+    text-align: center;
+	font-size: 15px;
+	line-height: 20px;
+	padding: 0 10px;
 }
 
 nav a {
+    display: inline-block;
     font-size: 12px;
     color: black;
     font-size: bold;
@@ -33,14 +52,14 @@ nav a {
 
 }
 nav a:hover {
-	color: black;
+    color: black;
 	text-decoration: underline;
     
 }
 
 .principal {
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 15px;
 
 }
 
@@ -51,12 +70,11 @@ h1 {
 
 
 .rodape {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: bold;
     text-align: center;
     line-height: 2em;
     
-
 }
 
 .rodapePrincipal {
@@ -65,8 +83,9 @@ h1 {
 }
 
 .rodapePrincipal-contatoForm {
+    display: flex;
     text-align: left;
-    margin-left: 560px;
+    margin-left: 550px;
     margin-bottom: -25px;
     
 }
@@ -74,6 +93,41 @@ h1 {
 .rodapePrincipal-contatoForm-emailInput {
     width: 150px;
 
+}
+
+@media(max-width: 768px) {
+    
+    .logo {
+        height: 35px;
+        width: 75%;
+        margin-top: 10px;
+    }
+
+    
+    .cabecalhoPrincipal-nav {
+        margin-top: -40px;
+    }
+           
+      
+    .principal {
+        width: 100%;
+        margin-top: 20px;
+        font-size: 14px;
+    
+    }
+
+    .rodapePrincipal {
+        width: -15%;
+        display:inline-flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+
+    .rodapePrincipal-contatoForm {
+        margin-left: -5em;
+    }
+         
 }
 
 
